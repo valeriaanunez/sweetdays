@@ -1,0 +1,229 @@
+/*HEAD*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+.titulo{
+color: #9d8189;
+font-size: 60px;
+text-align: center;
+margin-bottom: 60px;
+}
+
+body {
+    font-family: 'open sans';
+}
+.contenedor{
+    padding: 60px;
+    width: 90% ;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+header{
+ width: 100%; 
+ height: 600px;
+ background: #BA5370;  
+background: -webkit-linear-gradient(to right, #f4e2d8af, #ba5370b0), url(../img/otroheader.jpg);
+background: linear-gradient(to right, #f4e2d8af, #ba5370b0), url(../img/otroheader.jpg);
+background-size: cover;
+background-attachment: fixed;
+position: relative; 
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a {
+ color:#fff;
+ font-weight: 300px;
+ text-decoration: none;
+ margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+   display: flex;
+   height: 230px; 
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   /*pq no se centraba*/
+
+
+}
+
+.textos-header h1{
+    font-size: 70px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 60px;
+    font-weight: 300px;
+    color: #fff;
+}
+
+.wave{
+    position:absolute;
+    top: 270px;
+    bottom: 0px;
+    width: 100%;
+    
+
+    /*aqui weight para modificar el esapcio ese q esta molestando*/
+}
+ /*ABOUT US*/
+ .contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;/*q resparta el espacio equitativamente*/ 
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 48%;
+}
+
+
+/*el circulito de enumeracion*/
+.contenido-textos h3{
+    margin-bottom: 15px;
+
+}
+
+.contenido-textos h3 span{
+    background: #fb6f92;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0  6px rgba(0, 0, 0, .5) ;
+    padding: 2px;
+    margin-right: 5px;
+    margin-left: 20px;
+    /*arreglo*/
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 20px; 
+
+}
+
+.contenido-textos p{
+   /* padding: 0px 0px 3px 15px;*/
+    font-weight: 300px;
+    text-align: justify ;
+    padding: 20px; /* Espacio dentro del contenedor */
+    border: 1px solid rgba(0, 0, 0, 0); /* Solo para visualizar el borde */
+}
+
+/*galeria*/
+.portafolio{
+    background: #e0e1dd;
+}
+
+.galeria-port{
+  display: flex; /*maneja el espacio*/
+  justify-content: space-evenly;
+  flex-wrap:wrap;/*hace q no se juntes todas la imgs*/
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom:10px;
+    height: 200px ;
+    overflow: hidden;
+    position: relative; 
+    overflow: pointer;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0, 0.5);
+}
+
+.imagen-port > img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+   
+    transform: scale(0);
+    background:  hsla(300, 36%, 74%, 0.505);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p {
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+footer{
+    background: #a3b18a;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+display: flex; /*se desordena*/
+width: 90%;
+justify-content: space-evenly;
+margin:auto;
+padding-bottom: 50px; /*sin esto se pega los textos*/
+border-bottom: 1px solid;
+}
+
+.contenedor-footer{
+    text-align: center;
+
+}
+
+.contenedor-footer h4 {
+    color: #000;
+    border-bottom: 3px solid #588157 ;
+    padding-bottom: 5px;
+    margin-bottom:10px;
+}
+
+.contenedor-footer p{
+    color: #415a77;
+}
+
+.titulo-final{
+    margin: auto;
+text-align: center;
+font-size: 24px;
+margin : 20px 0 0 0;
+color: #3a5a40
+
+}
